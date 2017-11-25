@@ -34,6 +34,8 @@
  * Advanced settings can be found in Configuration_adv.h
  *
  */
+ 
+#include <U8glib.h>
 #ifndef CONFIGURATION_H
 #define CONFIGURATION_H
 #define CONFIGURATION_H_VERSION 010107
