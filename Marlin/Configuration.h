@@ -981,10 +981,9 @@
   #define GRID_MAX_POINTS_X 3    // Don't use more than 7 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
-  //#define MESH_G28_REST_ORIGIN // After homing all axes ('
-#endif // BED_LEVELING
+  //#define MESH_G28_REST_ORIGIN // After homing all axes ('G28' or 'G28 XYZ') rest Z at Z_MIN_POS
 
-//asdjhfisajdkfbsahdfbsadkfbs
+#endif // BED_LEVELING
 
 /**
  * Use the LCD controller for bed leveling
