@@ -804,8 +804,7 @@
     #endif
   #endif
 
-  #define PROBE_PIN_CONFIGURED (HAS_Z_MIN_PROBE_PIN || (HAS_Z_MIN && ENABLED(Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN)))
-  #define HAS_BED_PROBE (PROBE_SELECTED && PROBE_PIN_CONFIGURED && DISABLED(PROBE_MANUALLY))
+  #define HAS_BED_PROBE (PROBE_SELECTED && DISABLED(PROBE_MANUALLY))
 
   #if ENABLED(Z_PROBE_ALLEN_KEY)
     #define PROBE_IS_TRIGGERED_WHEN_STOWED_TEST
@@ -930,6 +929,20 @@
     #define MIN_PROBE_Y (max(Y_MIN_BED, Y_MIN_POS + Y_PROBE_OFFSET_FROM_EXTRUDER))
     #define MAX_PROBE_X (min(X_MAX_BED, X_MAX_POS + X_PROBE_OFFSET_FROM_EXTRUDER))
     #define MAX_PROBE_Y (min(Y_MAX_BED, Y_MAX_POS + Y_PROBE_OFFSET_FROM_EXTRUDER))
+  #endif
+
+  // Allow configuration to override these for special purposes
+  #ifndef MIN_PROBE_X
+    #define MIN_PROBE_X _MIN_PROBE_X
+  #endif
+  #ifndef MIN_PROBE_Y
+    #define MIN_PROBE_Y _MIN_PROBE_Y
+  #endif
+  #ifndef MAX_PROBE_X
+    #define MAX_PROBE_X _MAX_PROBE_X
+  #endif
+  #ifndef MAX_PROBE_Y
+    #define MAX_PROBE_Y _MAX_PROBE_Y
   #endif
 
   /**
