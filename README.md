@@ -19,6 +19,7 @@ G90 ; use absolute positioning
 M82 ; absolute extrusion mode  
 G28 W ; home all without mesh bed level  
 G80 ; mesh bed leveling  
+M420 S1 ;Enables Ned leveling feature  
 M104 S{material_print_temperature} ; set extruder temp  
 M140 S{material_bed_temperature} ; set bed temp  
 M190 S{material_bed_temperature} ; wait for bed temp  
@@ -28,10 +29,3 @@ G1 Y-3.0 F1000.0 ; go outside print area
 G1 X60.0 E9.0 F1000.0 ; intro line  
 G1 X100.0 E21.5 F1000.0 ; intro line  
 G92 E0.0 ; reset extruder distance position  
-
-### End Gode (Shouldnt really change)
-M82 ; absolute extrusion mode  
-G28 W ; home all without mesh bed level  
-G80 ; mesh bed leveling  
-M420 S1 ;Enables Ned leveling feature  
-M104 S{material_print_temperature} ; set extruder temp  
