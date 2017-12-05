@@ -19,7 +19,7 @@ G90 ; use absolute positioning
 M82 ; absolute extrusion mode  
 G28 W ; home all without mesh bed level  
 G80 ; mesh bed leveling  
-M420 S1 ;Enables Ned leveling feature  
+M420 S1 ;Enables bed leveling feature  
 M104 S{material_print_temperature} ; set extruder temp  
 M140 S{material_bed_temperature} ; set bed temp  
 M190 S{material_bed_temperature} ; wait for bed temp  
