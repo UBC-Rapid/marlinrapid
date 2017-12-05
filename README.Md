@@ -1,4 +1,24 @@
 # cl0ned i3 MK1
+*The firmware used to run UBC Rapid's Prusa i3 MK1 iterations on the arduino + Ramps 1.4 setups we use*
+
+## Uploading the firmware
+
+### Setting up the ArduinoIDE
+1. Download the Ardunio IDE from [here](https://www.arduino.cc/en/Main/Software)  
+   - Just use the most updated version and you'll be fine.
+2. Import the u8glib library
+   - The u8glib library is needed to use the full graphics display that Rapid seems to have lying around in abundance.
+   - The u8glib zip folder should be there in this branch.
+   - In the arduinoIDE go to Sketch->Include Library->Add .ZIP Library.. then find the zip folder to install the u8glib library
+   - (Unnessesary?) Include the library in your configurations.h file right above the (#ifndef CONFIGURATION_H) line with (#include <U8glib.h>)
+ 3. Make your edits
+    - If you reallllllyyyy must you can then change settings or edit files, hopefully you knoow what you're doing.
+ 4. Compile and Upload
+    - Make sure in "Tools" in Board you are using the (Arduino/Genuino 2560 or Mega 2560) and Processor (ATmega2560 (Mega 2560))
+    - Hit the verify checkmark to make sure you haven't broken anything
+    - Connect your printer to your laptop and make sure you're on the right port. (Should find it automatically)
+    - If you are running other software that communicates with printers, close them otherwise you'll run into errors. (Cura, Pr0nterface, Prusa Updater???)
+  5.  Celebrate
 
 ## Enabling autoleveling on your slic3r software (slic3r, Cura, etc...)
 
