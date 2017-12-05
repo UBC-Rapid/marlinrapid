@@ -12,7 +12,7 @@
    - In the arduinoIDE go to Sketch->Include Library->Add .ZIP Library.. then find the zip folder to install the u8glib library
    - (Unnessesary?) Include the library in your configurations.h file right above the (#ifndef CONFIGURATION_H) line with (#include <U8glib.h>)
  3. Make your edits
-    - If you reallllllyyyy must you can then change settings or edit files, hopefully you knoow what you're doing.
+    - If you reallllllyyyy must you can then change settings or edit files, hopefully you know what you're doing.
  4. Compile and Upload
     - Make sure in "Tools" in Board you are using the (Arduino/Genuino 2560 or Mega 2560) and Processor (ATmega2560 (Mega 2560))
     - Hit the verify checkmark to make sure you haven't broken anything
