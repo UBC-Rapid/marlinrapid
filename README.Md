@@ -39,10 +39,10 @@ G90 ; use absolute positioning
 M82 ; absolute extrusion mode  
 G28 W ; home all without mesh bed level  
 G80 ; mesh bed leveling  
-M420 S1 ;Enables bed leveling feature  
-M104 S{material_print_temperature} ; set extruder temp  
+M420 S1 ;Enables bed leveling feature
 M140 S{material_bed_temperature} ; set bed temp  
 M190 S{material_bed_temperature} ; wait for bed temp  
+M104 S{material_print_temperature} ; set extruder temp  
 M109 S{material_print_temperature} ; wait for extruder temp  
 G92 E0.0 ; reset extruder distance position  
 G1 Y-3.0 F1000.0 ; go outside print area  
