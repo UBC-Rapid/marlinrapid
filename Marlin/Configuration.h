@@ -1495,7 +1495,7 @@
 // RepRapDiscount Smart Controller.
 // http://reprap.org/wiki/RepRapDiscount_Smart_Controller
 //
-// Note: Usually sold with a white PCB.
+// Note: Usually sold with a white PCB. (Its the long one and is now usually a Red PCB)
 //
 //#define REPRAP_DISCOUNT_SMART_CONTROLLER
 
@@ -1511,6 +1511,7 @@
 // RepRapDiscount FULL GRAPHIC Smart Controller
 // http://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
 //
+//The big one
 #define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
 
 //
